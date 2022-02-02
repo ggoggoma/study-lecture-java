@@ -1,8 +1,6 @@
-package spring.entity;
+package spring.di.entity;
 
-import spring.entitiy.Exam;
-
-public class NewlecExam implements Exam {
+public class InlineNewlecExam implements Exam {
 
 	private int kor;
 	private int eng;
@@ -11,13 +9,12 @@ public class NewlecExam implements Exam {
 	
 	@Override
 	public int total() {
-
+		
 		return kor+eng+math+com;
 	}
 
 	@Override
 	public float avg() {
-
 		return total()/4.0f;
 	}
 

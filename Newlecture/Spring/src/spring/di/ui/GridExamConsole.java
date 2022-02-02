@@ -1,15 +1,14 @@
 package spring.di.ui;
 
-import spring.entitiy.Exam;
-import spring.ui.ExamConsole;
+import spring.di.entity.Exam;
 
-public class GridConsole implements ExamConsole {
+public class GridExamConsole implements ExamConsole {
+
 	private Exam exam;
 	
-	public GridConsole(Exam exam) {
+	public GridExamConsole(Exam exam) {
 		this.exam = exam;
 	}
-
 	@Override
 	public void print() {
 		System.out.println("__________________");
